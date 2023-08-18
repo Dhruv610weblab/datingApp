@@ -1,0 +1,325 @@
+name: datingapp
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.1 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^3.0.1
+  carousel_slider: ^4.2.1
+  get: ^4.6.5
+  country_code_picker: ^2.0.2
+  flutter_localization: ^0.1.10
+  pinput: ^2.2.21
+  table_calendar: ^3.0.2
+#  flutter_svg: ^0.22.0
+  persistent_bottom_nav_bar: ^5.0.2
+#  flutter_tinder_swipe: ^0.0.4
+  swipe_cards: ^2.0.0+1
+  story_view: ^0.14.0
+  readmore: ^2.2.0
+  dotted_border: ^2.0.0+3
+  get_storage: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  assets:
+    - assets/
+    - assets/events/
+    - assets/ui-kit/
+    - assets/ui-kit/dislike.png
+    - assets/ui-kit/like 2.png
+    - assets/ui-kit/star 2.png
+    - assets/ui-kit/people_disable.png
+    - assets/ui-kit/swip_disable.png
+    - assets/ui-kit/indicator_disable.png
+    - assets/ui-kit/message_disable.png
+    - assets/ui-kit/images/like.png
+    - assets/ui-kit/images/tennis.png
+    - assets/ui-kit/images/voice.png
+    - assets/ui-kit/images/outdoor.png
+    - assets/ui-kit/images/oval-3-line.png
+    - assets/ui-kit/images/camera.png
+    - assets/ui-kit/images/ripple.png
+    - assets/preview/images/figma.png
+    - assets/ui-kit/images/small-right.png
+    - assets/ui-kit/images/cellular-connection.png
+    - assets/ui-kit/images/battery.png
+    - assets/ui-kit/images/right.png
+    - assets/ui-kit/images/right-Rd2.png
+    - assets/ui-kit/images/oval-5-line.png
+    - assets/ui-kit/images/right-Djn.png
+    - assets/ui-kit/images/wifi.png
+    - assets/ui-kit/images/viencharts.png
+    - assets/ui-kit/images/wifi-D4c.png
+    - assets/ui-kit/images/cellular-connection-5uz.png
+    - assets/ui-kit/images/battery-Wtp.png
+    - assets/ui-kit/images/onboarding-dots.png
+    - assets/ui-kit/images/icon-calendar.png
+    - assets/ui-kit/images/star.png
+    - assets/ui-kit/images/wifi-P9a.png
+    - assets/ui-kit/images/indicator.png
+    - assets/ui-kit/images/game-handle.png
+    - assets/ui-kit/images/music.png
+    - assets/ui-kit/images/icons-logo-google.png
+    - assets/ui-kit/images/right-Woi.png
+    - assets/ui-kit/images/btn-filter.png
+    - assets/ui-kit/images/oval-4-line.png
+    - assets/ui-kit/images/weixin-market.png
+    - assets/ui-kit/images/right-Yjr.png
+    - assets/ui-kit/images/oval-2-line.png
+    - assets/ui-kit/images/like-VXv.png
+    - assets/ui-kit/images/icons-logo-facebook.png
+    - assets/ui-kit/images/search.png
+    - assets/ui-kit/images/platte.png
+    - assets/ui-kit/images/delete.png
+    - assets/ui-kit/images/trademark.png
+    - assets/ui-kit/images/local-two.png
+    - assets/ui-kit/images/container.png
+    - assets/ui-kit/images/check-small.png
+    - assets/ui-kit/images/icon-back-white.png
+    - assets/ui-kit/images/people.png
+    - assets/ui-kit/images/onboarding-dots-fz8.png
+    - assets/ui-kit/images/check-small-4PJ.png
+    - assets/ui-kit/images/cellular-connection-cHe.png
+    - assets/ui-kit/images/close-small.png
+    - assets/ui-kit/images/mask-photo.png
+    - assets/ui-kit/images/parachute.png
+    - assets/ui-kit/images/mask-photo-e1v.png
+    - assets/ui-kit/images/battery-Y3J.png
+    - assets/ui-kit/images/small-right-BLL.png
+    - assets/ui-kit/images/noodles.png
+    - assets/ui-kit/images/photo-bg.png
+    - assets/ui-kit/images/close-small-K3W.png
+    - assets/ui-kit/images/mask-photo-jbn.png
+    - assets/ui-kit/images/close-small-Pg4.png
+    - assets/ui-kit/images/like-JGG.png
+    - assets/ui-kit/images/wifi-YJL.png
+    - assets/ui-kit/images/btn-send.png
+    - assets/preview/images/swipe-right.png
+    - assets/ui-kit/images/photo-bg-fU4.png
+    - assets/ui-kit/images/photo-bg-rTS.png
+    - assets/ui-kit/images/nav-bar-1CL.png
+    - assets/ui-kit/images/btn-filter-ji8.png
+    - assets/ui-kit/images/mask-photo-Gi4.png
+    - assets/ui-kit/images/stickers.png
+    - assets/ui-kit/images/mask-photo-ZaY.png
+    - assets/ui-kit/images/like-UaL.png
+    - assets/ui-kit/images/cellular-connection-pPJ.png
+    - assets/ui-kit/images/camera-nL8.png
+    - assets/ui-kit/images/close-small-WqN.png
+    - assets/ui-kit/images/photo-bg-wGt.png
+    - assets/ui-kit/images/photo-bg-iwA.png
+    - assets/ui-kit/images/photo-bg-TSG.png
+    - assets/ui-kit/images/like-X6g.png
+    - assets/ui-kit/images/like-4sJ.png
+    - assets/ui-kit/images/nav-bar-DVJ.png
+    - assets/ui-kit/images/profile-details-bg.png
+    - assets/ui-kit/images/battery-pE4.png
+    - assets/ui-kit/images/icons-logo-apple.png
+    - assets/ui-kit/images/nav-bar-hoe.png
+    - assets/ui-kit/images/mask-photo-FqA.png
+    - assets/ui-kit/images/goblet-full.png
+    - assets/ui-kit/images/chat.png
+    - assets/ui-kit/images/sport.png
+    - assets/ui-kit/images/cellular-connection-AeC.png
+    - assets/ui-kit/images/photo-bg-33n.png
+    - assets/ui-kit/images/btn-filter-hJQ.png
+    - assets/ui-kit/images/like-kfz.png
+    - assets/ui-kit/images/oval-1-line.png
+    - assets/ui-kit/images/close-small-F6x.png
+    - assets/ui-kit/images/btn-filter-pcx.png
+    - assets/ui-kit/images/mask-photo-CvC.png
+    - assets/ui-kit/images/like-Dpc.png
+    - assets/ui-kit/images/battery-Y9n.png
+    - assets/ui-kit/images/close-small-r5v.png
+    - assets/ui-kit/images/nav-bar-zC8.png
+    - assets/ui-kit/images/auto-group-6fbe.png
+    - assets/ui-kit/images/done-all.png
+    - assets/ui-kit/images/close-small-KM2.png
+    - assets/ui-kit/images/container-328.png
+    - assets/ui-kit/images/like-yAg.png
+    - assets/ui-kit/images/btn-filter-Jye.png
+    - assets/ui-kit/images/container-EJc.png
+    - assets/ui-kit/images/container-LsS.png
+    - assets/ui-kit/images/us-united-states.png
+    - assets/ui-kit/images/like-2SC.png
+    - assets/ui-kit/images/done-all-xKr.png
+    - assets/ui-kit/images/wifi-CJc.png
+    - assets/ui-kit/images/btn-close.png
+    - assets/ui-kit/images/container-CrL.png
+    - assets/ui-kit/images/stickers-QxQ.png
+    - assets/ui-kit/images/container-nHn.png
+    - assets/ui-kit/images/onboarding-dots-KHi.png
+    - assets/ui-kit/images/photo-bg-Fon.png
+    - assets/ui-kit/images/photo-bg-MV2.png
+    - assets/preview/images/mocup.png
+    - assets/ui-kit/images/photo-bg-WNC.png
+    - assets/ui-kit/images/girl2-bg.png
+    - assets/ui-kit/images/nav-bar.png
+    - assets/ui-kit/images/indicator-En4.png
+    - assets/ui-kit/images/mask-photo-LaC.png
+    - assets/ui-kit/images/like-hQk.png
+    - assets/ui-kit/images/close-small-FhA.png
+    - assets/ui-kit/images/photo-bg-nLG.png
+    - assets/ui-kit/images/photo-bg-JJc.png
+    - assets/ui-kit/images/girl3-bg.png
+    - assets/ui-kit/images/photo-bg-5Vr.png
+    - assets/ui-kit/images/like-Phz.png
+    - assets/ui-kit/images/container-bex.png
+    - assets/ui-kit/images/photo-bg-GbJ.png
+    - assets/ui-kit/images/main-1.png
+    - assets/ui-kit/images/container-RrQ.png
+    - assets/ui-kit/images/like-amE.png
+    - assets/ui-kit/images/mask-photo-fXn.png
+    - assets/ui-kit/images/photo-bg-vxQ.png
+    - assets/ui-kit/images/photo-bg-EiC.png
+    - assets/ui-kit/images/photo-bg-M76.png
+    - assets/ui-kit/images/photo-bg-bg.png
+    - assets/ui-kit/images/photo-bg-kJc.png
+    - assets/ui-kit/images/main-1-EzU.png
+    - assets/ui-kit/images/photo-bg-7e8.png
+    - assets/ui-kit/images/container-9Za.png
+    - assets/ui-kit/images/photo-bg-Yhe.png
+    - assets/ui-kit/images/photo-bg-HQC.png
+    - assets/ui-kit/images/girl1-bg.png
+    - assets/ui-kit/images/photo-bg-2si.png
+    - assets/ui-kit/images/photo-bg-soe.png
+    - assets/ui-kit/images/photo-bg-T3v.png
+    - assets/ui-kit/images/girl2-bg-yHA.png
+    - assets/ui-kit/images/photo-bg-U5v.png
+    - assets/ui-kit/images/girl1-bg-BRJ.png
+    - assets/ui-kit/images/photo-bg-1qa.png
+    - assets/ui-kit/images/photo-bg-ZXn.png
+    - assets/ui-kit/images/girl3-bg-F92.png
+    - assets/ui-kit/images/girl1-bg-9xk.png
+    - assets/ui-kit/images/girl2-bg-ayn.png
+    - assets/ui-kit/images/photo-bg-tNC.png
+    - assets/ui-kit/images/girl3-bg-iFz.png
+    - assets/ui-kit/images/photo-bg-bip.png
+    - assets/ui-kit/images/photo.png
+    - assets/ui-kit/images/main-1-sEg.png
+    - assets/ui-kit/images/mask-photo-9N8.png
+    - assets/ui-kit/images/close-small-YEt.png
+    - assets/ui-kit/images/star-CWC.png
+    - assets/ui-kit/images/done-all-oQ4.png
+    - assets/ui-kit/images/nav-bar-zUY.png
+    - assets/ui-kit/images/local-two-AJt.png
+    - assets/ui-kit/images/right-tDE.png
+    - assets/ui-kit/images/send.png
+    - assets/ui-kit/images/photo-bg-JRe.png
+    - assets/ui-kit/images/close-small-evk.png
+    - assets/ui-kit/images/done-all-fxt.png
+    - assets/ui-kit/images/photo-bg-Xha.png
+    - assets/ui-kit/images/photo-bg-ofe.png
+    - assets/ui-kit/images/like-YEL.png
+    - assets/ui-kit/images/star-E8G.png
+    - assets/ui-kit/images/done-all-QCx.png
+    - assets/ui-kit/images/photo-bg-NFz.png
+    - assets/ui-kit/images/photo-bg-DK6.png
+    - assets/ui-kit/images/right-2NL.png
+    - assets/ui-kit/images/photo-bg-4Rv.png
+    - assets/ui-kit/images/send-4RE.png
+    - assets/ui-kit/images/photo-bg-YjS.png
+    - assets/ui-kit/images/photo-bg-4Tz.png
+    - assets/ui-kit/images/done-all-Zy2.png
+    - assets/ui-kit/images/right-MoW.png
+    - assets/ui-kit/images/slider.png
+    - assets/ui-kit/images/photo-bg-c7r.png
+    - assets/ui-kit/images/photo-bg-Zxk.png
+    - assets/ui-kit/images/photo-bg-z2t.png
+    - assets/ui-kit/images/icon-back-white-UMe.png
+    - assets/ui-kit/images/like-esJ.png
+    - assets/ui-kit/images/close-small-xa4.png
+    - assets/ui-kit/images/photo-bg-x2C.png
+    - assets/ui-kit/images/container-phe.png
+    - assets/ui-kit/images/indicator-hRS.png
+    - assets/ui-kit/images/photo-bg-4m6.png
+    - assets/ui-kit/images/main-bg.png
+    - assets/ui-kit/images/local-two-jtU.png
+    - assets/ui-kit/images/photo-bg-Yy6.png
+    - assets/ui-kit/images/photo-bg-PWQ.png
+    - assets/ui-kit/images/photo-8Jc.png
+    - assets/ui-kit/images/slider-aGx.png
+    - assets/ui-kit/images/.png
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
