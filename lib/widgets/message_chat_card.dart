@@ -1,5 +1,4 @@
 import 'package:datingapp/units/colors.dart';
-import 'package:datingapp/units/text_style.dart';
 import 'package:datingapp/units/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -81,9 +80,23 @@ class ChatCard extends StatelessWidget {
                         ? Positioned(
                             top: 0,
                             right: 0,
-                            child: Image.asset(
-                              'assets/ui-kit/images/like-2SC.png',
-                              width: 24,
+                            child: Container(
+                              width: 24 * fem,
+                              height: 24 * fem,
+                              decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      offset: Offset(1, 2),
+                                      blurRadius: 3.0,
+                                      color: AppColor.primary.withOpacity(0.2),
+                                    )
+                                  ],
+                                  color: AppColor.white,
+                                  borderRadius: BorderRadius.circular(100)),
+                              child: Image.asset(
+                                'assets/ui-kit/images/like_connect1.png',
+                                scale: 34,
+                              ),
                             ))
                         : isNotification == 1
                             ? Positioned(
@@ -238,7 +251,9 @@ class ChatCard extends StatelessWidget {
                                 InkWell(
                                     onTap: () {},
                                     child: Image.asset(
-                                        'assets/ui-kit/images/like (1).png'))
+                                      'assets/ui-kit/images/like_connect1.png',
+                                      scale: 18,
+                                    ))
                               ],
                             )
                           : Container()

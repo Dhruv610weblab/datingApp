@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:datingapp/units/colors.dart';
 import 'package:datingapp/units/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -41,11 +42,18 @@ class MatchesCard extends StatelessWidget {
         children: [
           isLiked
               ? Positioned(
-                  top: -18 * fem,
-                  right: -35 * fem,
-                  child: Image.asset(
-                    'assets/ui-kit/like (1).png',
-                    scale: 4,
+                  top: 12 * fem,
+                  right: 15 * fem,
+                  child: Container(
+                    width: 32.4 * fem,
+                    height: 32.4 * fem,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        color: AppColor.white),
+                    child: Image.asset(
+                      'assets/ui-kit/images/like_connect1.png',
+                      scale: 28,
+                    ),
                   ))
               : Container(),
           Column(
@@ -113,7 +121,7 @@ class MatchesCard extends StatelessWidget {
                       width: 16.67 * fem,
                       height: 14.3 * fem,
                       child: Image.asset(
-                        'assets/ui-kit/images/like-Dpc.png',
+                        'assets/ui-kit/images/like_connect.png',
                         width: 16.67 * fem,
                         height: 14.3 * fem,
                       ),

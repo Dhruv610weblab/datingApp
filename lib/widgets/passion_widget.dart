@@ -17,7 +17,7 @@ class PassionStyle {
       boxShadow: [
         BoxShadow(
           color: AppColor.lightPrimary,
-          offset: Offset(0 * fem, 15 * fem),
+          offset: Offset(0 * fem, 12 * fem),
           blurRadius: 7.5 * fem,
         ),
       ],

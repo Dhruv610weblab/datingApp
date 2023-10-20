@@ -114,9 +114,11 @@ class _NotificationsState extends State<Notifications> {
       "count": "1"
     }
   ];
+
   final TextEditingController _searchController = TextEditingController();
   ScrollController scrollcontroller = ScrollController();
   int isActive = 0;
+  int isMatch = 0;
   @override
   Widget build(BuildContext context) {
     double baseWidth = 385;
@@ -234,6 +236,44 @@ class _NotificationsState extends State<Notifications> {
                           ],
                         ),
                       ),
+                      isActive == 0
+                          ? Container(
+                              margin: EdgeInsets.fromLTRB(
+                                  (0) * fem, 0 * fem, 0 * fem, 0 * fem),
+                              padding: EdgeInsets.fromLTRB(
+                                  18.00 * fem, 0 * fem, 18.00 * fem, 0 * fem),
+                              width: 385 * fem,
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  TextButton(
+                                      onPressed: () => setState(() {
+                                            isMatch = 0;
+                                          }),
+                                      child: Text(
+                                        'Show Potential'.tr,
+                                        style: TextStyle(
+                                            color: isMatch == 0
+                                                ? AppColor.primary
+                                                : AppColor.grey),
+                                      )),
+                                  TextButton(
+                                      onPressed: () => setState(() {
+                                            isMatch = 1;
+                                          }),
+                                      child: Text(
+                                        'Core Connections'.tr,
+                                        style: TextStyle(
+                                            color: isMatch == 1
+                                                ? AppColor.primary
+                                                : AppColor.grey),
+                                      )),
+                                ],
+                              ),
+                            )
+                          : Container(),
                     ],
                   ),
                 ),

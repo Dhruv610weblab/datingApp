@@ -223,7 +223,8 @@ class _HomeState extends State<Home> {
       Notifications(),
       EventScreen(),
       // Groups(),
-      Messages(),
+      // Messages(),
+      ChatTabScreen(),
       UserProfile()
     ];
   }

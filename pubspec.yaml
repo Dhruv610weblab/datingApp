@@ -87,7 +87,10 @@ flutter:
   assets:
     - assets/
     - assets/events/
+    - assets/groups/
     - assets/ui-kit/
+    - assets/ui-kit/images/like_connect00.png
+    - assets/ui-kit/images/like_connect1.png
     - assets/ui-kit/dislike.png
     - assets/ui-kit/like 2.png
     - assets/ui-kit/star 2.png

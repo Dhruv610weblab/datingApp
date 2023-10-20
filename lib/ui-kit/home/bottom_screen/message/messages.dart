@@ -29,7 +29,7 @@ class _MessagesState extends State<Messages> {
       "time": "19 min",
       "image": 'assets/ui-kit/images/photo-bg-33n.png',
       "unread": true,
-      "isStory": true,
+      "isStory": false,
       "count": "2"
     },
     {
@@ -38,7 +38,7 @@ class _MessagesState extends State<Messages> {
       "time": "19 min",
       "image": 'assets/ui-kit/images/photo-bg-5Vr.png',
       "unread": false,
-      "isStory": true,
+      "isStory": false,
       "count": ""
     },
     {
@@ -56,7 +56,7 @@ class _MessagesState extends State<Messages> {
       "time": "19 min",
       "image": 'assets/ui-kit/images/photo-bg-5Vr.png',
       "unread": false,
-      "isStory": true,
+      "isStory": false,
       "count": ""
     },
     {
@@ -142,7 +142,7 @@ class _MessagesState extends State<Messages> {
                       // ),
                       Container(
                         margin: EdgeInsets.fromLTRB(
-                            (0) * fem, 0 * fem, 0 * fem, 0 * fem),
+                            (0) * fem, 20 * fem, 0 * fem, 0 * fem),
                         padding: EdgeInsets.fromLTRB(
                             18.00 * fem, 0 * fem, 18.00 * fem, 18 * fem),
                         width: 385 * fem,

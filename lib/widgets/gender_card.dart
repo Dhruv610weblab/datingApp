@@ -1,3 +1,4 @@
+import 'package:datingapp/units/colors.dart';
 import 'package:datingapp/units/text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -53,15 +54,12 @@ class GenderCard extends StatelessWidget {
             margin: EdgeInsets.fromLTRB(0 * fem, 2 * fem, 10 * fem, 0 * fem),
             width: 12.5 * fem,
             height: 8.33 * fem,
-            child: Image.asset(
-              image != null
-                  ? image.toString()
-                  : isSelected
-                      ? 'assets/ui-kit/images/check-small-4PJ.png'
-                      : 'assets/ui-kit/images/check-small.png',
-              width: 12.5 * fem,
-              height: 8.33 * fem,
-            ),
+            child: isSelected
+                ? Icon(
+                    Icons.check,
+                    color: AppColor.white,
+                  )
+                : Container(),
           ),
         ],
       ),

@@ -1,15 +1,14 @@
 import 'package:country_code_picker/country_localizations.dart';
 import 'package:datingapp/ui-kit/boarding/onboarding.dart';
-import 'package:datingapp/units/colors.dart';
 import 'package:datingapp/units/language.dart';
 import 'package:datingapp/widgets/check_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import 'units/utils.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 

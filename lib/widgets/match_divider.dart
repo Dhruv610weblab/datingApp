@@ -1,13 +1,9 @@
-import 'package:datingapp/units/utils.dart';
 import 'package:flutter/material.dart';
 
 class MatchesDivider extends StatelessWidget {
-  const MatchesDivider({
-    Key? key,
-    required this.fem,
-    required this.ffem,
-    this.text,
-  }) : super(key: key);
+  const MatchesDivider(
+      {Key? key, required this.fem, required this.ffem, this.text})
+      : super(key: key);
 
   final double fem;
   final double ffem;

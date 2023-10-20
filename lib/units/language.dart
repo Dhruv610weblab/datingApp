@@ -126,7 +126,13 @@ class Languages extends Translations {
           'Sikh': 'Sikh',
           'Other': 'Other',
           'Jewish': 'Jewish',
-          'Christian': 'Christian'
+          'Christian': 'Christian',
+          'This is a list of people  who share a potential connection and a core connection':
+              'This is a list of people  who share a potential connection and a core connection',
+          'Select date of birth': 'Select date of birth',
+          'My Deep Qualities': 'My Deep Qualities',
+          "View Event":"View Event"
+
         },
         'hi_IN': {
           'Language': 'भाषा',
@@ -252,7 +258,13 @@ class Languages extends Translations {
           'Sikh': 'सिख',
           'Other': 'अन्य',
           'Jewish': 'यहूदी',
-          'Christian': 'ईसाई'
+          'Christian': 'ईसाई',
+          'This is a list of people  who share a potential connection and a core connection':
+              'यह उन लोगों की सूची है जो एक संभावित कनेक्शन और एक मुख्य कनेक्शन साझा करते हैं',
+          'Select date of birth': 'जन्मतिथि चुनें',
+          'My Deep Qualities': 'मेरे गहन गुण',
+          "View Event":"View Event"
+
         },
         'el_GR': {
           'SelectTables': 'Επιλέξτε τραπέζια',
@@ -270,7 +282,12 @@ class Languages extends Translations {
           "SomeThing": 'Κάτι δεν πήγε καλά. Παρακαλώ ξαναπροσπαθήστε',
           'PleaseWait': 'Παρακαλώ περιμένετε',
           'Success': 'Επιτυχία',
-          'NotificationClear': 'Η ειδοποίηση διαγράφηκε με επιτυχία'
+          'NotificationClear': 'Η ειδοποίηση διαγράφηκε με επιτυχία',
+          'This is a list of people  who share a potential connection and a core connection':
+              'Αυτή είναι μια λίστα ατόμων που μοιράζονται μια πιθανή σύνδεση και μια βασική σύνδεση',
+          'Select date of birth': 'Επιλέξτε ημερομηνία γέννησης',
+          'My Deep Qualities': 'Οι βαθιές μου ιδιότητες',
+
         },
         'fr_FR': {
           'SelectTables': 'Select Tables',
@@ -288,7 +305,11 @@ class Languages extends Translations {
           "SomeThing": 'Something went wrong, please try again',
           'PleaseWait': 'Please wait',
           'Success': 'Success',
-          'NotificationClear': 'Notification cleared successfully'
+          'NotificationClear': 'Notification cleared successfully',
+          'This is a list of people  who share a potential connection and a core connection':
+              'Ceci est une liste de personnes qui partagent une connexion potentielle et une connexion principale',
+          'Select date of birth': 'Sélectionnez la date de naissance',
+          'My Deep Qualities': 'Mes qualités profondes',
         },
       };
 }

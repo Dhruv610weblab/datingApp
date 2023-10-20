@@ -70,7 +70,7 @@ class _KidsScreenState extends State<KidsScreen> {
 
               Container(
                 margin:
-                    EdgeInsets.fromLTRB(0 * fem, 20 * fem, 28 * fem, 0 * fem),
+                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 28 * fem, 0 * fem),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -82,11 +82,11 @@ class _KidsScreenState extends State<KidsScreen> {
                       constraints: BoxConstraints(
                         maxWidth: 267 * fem,
                       ),
-                      child: Text(
-                        '''Lorel empsum text is no longer to see the ehncity'''
-                            .tr,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      // child: Text(
+                      //   '''Lorel empsum text is no longer to see the ehncity'''
+                      //       .tr,
+                      //   style: Theme.of(context).textTheme.bodyText1,
+                      // ),
                     ),
                   ],
                 ),

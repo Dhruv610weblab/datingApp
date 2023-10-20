@@ -53,7 +53,7 @@ class _BottomSheetFilterState extends State<BottomSheetFilter> {
     {'name': 'Black'},
     {'name': 'White'},
     {'name': 'Asian'},
-    {'name': 'American'},
+    // {'name': 'American'},
     {'name': 'Hispanic'},
     {'name': 'Arabic'},
     {'name': 'Native'}
@@ -768,7 +768,10 @@ class _BottomSheetFilterState extends State<BottomSheetFilter> {
                       children: [
                         Text('Distance'.tr,
                             style: Theme.of(context).textTheme.headline5),
-                        Text('${_currentSliderValue.toInt()} km',
+                        Text(
+                            _currentSliderValue.toInt() == 100
+                                ? "Unlimited"
+                                : '${_currentSliderValue.toInt()} km',
                             textAlign: TextAlign.right,
                             style: Theme.of(context).textTheme.bodyText1),
                       ],

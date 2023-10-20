@@ -25,7 +25,6 @@ class _BottomSheetCalendarState extends State<BottomSheetCalendar> {
     return Container(
       decoration: BoxDecoration(
           color: Theme.of(context).backgroundColor,
-
           border: Border.all(color: AppColor.white, width: 0.2),
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(52), topLeft: Radius.circular(52))),
@@ -52,6 +51,13 @@ class _BottomSheetCalendarState extends State<BottomSheetCalendar> {
           Column(
             mainAxisSize: MainAxisSize.max,
             children: [
+              Padding(
+                padding: EdgeInsets.only(top: 28 * fem),
+                child: Text(
+                  'Select date of birth'.tr,
+                  style: Theme.of(context).textTheme.bodyText2,
+                ),
+              ),
               Expanded(
                 child: TableCalendar(
                   daysOfWeekHeight: 40 * fem,
