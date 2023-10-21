@@ -55,7 +55,15 @@ class _DashboardState extends State<Dashboard> {
       "image": 'assets/ui-kit/images/photo-bg-7e8.png',
     },
   ];
+  // Initial Selected Value
+  String dropdownvalue = 'Shows Potential';
 
+  // List of items in our dropdown menu
+  var items = [
+    'Shows Potential',
+    'Core Connection',
+    'Available for coffee',
+  ];
   @override
   void initState() {
     for (int i = 0; i < _peoples.length; i++) {
@@ -102,330 +110,373 @@ class _DashboardState extends State<Dashboard> {
       body: SafeArea(
         child: Container(
           width: double.infinity,
-          child: Container(
-            width: double.infinity,
-            // decoration: BoxDecoration(
-            //   color: Color(0xffffffff),
-            // ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Container(
-                  padding:
-                      EdgeInsets.fromLTRB(0 * fem, 10 * fem, 0 * fem, 0 * fem),
-                  width: double.infinity,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        // headerRuS (309:5477)
-                        margin: EdgeInsets.fromLTRB(
-                            18 * fem, 0 * fem, 18 * fem, 0 * fem),
-                        width: double.infinity,
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    // messagesYjA (309:5485)
-                                    margin: EdgeInsets.fromLTRB(
-                                        0 * fem, 0 * fem, 97 * fem, 0 * fem),
-                                    child: Text(
-                                      'Discover'.tr,
-                                      style:
-                                          Theme.of(context).textTheme.headline2,
-                                    ),
-                                  ),
-                                  Text(
-                                    'Chicago, II',
-                                    textAlign: TextAlign.center,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                padding:
+                    EdgeInsets.fromLTRB(0 * fem, 10 * fem, 0 * fem, 0 * fem),
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Container(
+                      // headerRuS (309:5477)
+                      margin: EdgeInsets.fromLTRB(
+                          18 * fem, 0 * fem, 18 * fem, 0 * fem),
+                      width: double.infinity,
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  // messagesYjA (309:5485)
+                                  margin: EdgeInsets.fromLTRB(
+                                      0 * fem, 0 * fem, 97 * fem, 0 * fem),
+                                  child: Text(
+                                    'Discover'.tr,
                                     style:
-                                        Theme.of(context).textTheme.subtitle1,
+                                        Theme.of(context).textTheme.headline2,
                                   ),
-                                ],
-                              ),
+                                ),
+                                Text(
+                                  'Chicago, II',
+                                  textAlign: TextAlign.center,
+                                  style: Theme.of(context).textTheme.subtitle1,
+                                ),
+                              ],
                             ),
-                            Filter(
-                                fem: fem,
-                                onPress: () {
-                                  showModalBottomSheet(
-                                    context: context,
-                                    isScrollControlled: true,
-                                    useRootNavigator: true,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(50 * fem),
-                                      topRight: Radius.circular(50 * fem),
-                                    )),
-                                    builder: (BuildContext context) {
-                                      return BottomSheetFilter();
-                                    },
-                                  );
-                                }),
-                          ],
-                        ),
-                      ),
-                      // Container(
-                      //   // headerFHA (309:5460)
-                      //   margin: EdgeInsets.fromLTRB(
-                      //       18 * fem, 0 * fem, 18 * fem, 24 * fem),
-                      //   width: double.infinity,
-                      //   height: 52 * fem,
-                      //   child: Row(
-                      //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      //     crossAxisAlignment: CrossAxisAlignment.center,
-                      //     children: [
-                      //       // Back(fem: fem),
-                      //       Container(),
-                      //       Column(
-                      //         mainAxisSize: MainAxisSize.max,
-                      //         mainAxisAlignment: MainAxisAlignment.center,
-                      //         children: [
-                      //           Text(
-                      //             'Discover',
-                      //             textAlign: TextAlign.center,
-                      //             style: AppTextStyle
-                      //                 .buildSafeGoogleFont2470012575black(
-                      //                     ffem, fem),
-                      //           ),
-                      //           Text(
-                      //             'Chicago, II',
-                      //             textAlign: TextAlign.center,
-                      //             style: AppTextStyle
-                      //                 .buildSafeGoogleFont1240012575grysubtitle(
-                      //                     ffem, fem),
-                      //           ),
-                      //         ],
-                      //       ),
-                      //       Filter(
-                      //           fem: fem,
-                      //           onPress: () {
-                      //             showModalBottomSheet(
-                      //               context: context,
-                      //               isScrollControlled: true,
-                      //               useRootNavigator: true,
-                      //               shape: RoundedRectangleBorder(
-                      //                   borderRadius: BorderRadius.only(
-                      //                 topLeft: Radius.circular(50 * fem),
-                      //                 topRight: Radius.circular(50 * fem),
-                      //               )),
-                      //               builder: (BuildContext context) {
-                      //                 return BottomSheetFilter();
-                      //               },
-                      //             );
-                      //           })
-                      //     ],
-                      //   ),
-                      // ),
-                      Center(
-                        child: Container(
-                          margin: EdgeInsets.fromLTRB(
-                              18 * fem, 0 * fem, 18 * fem, 20 * fem),
-                          width: double.infinity,
-                          height: 477 * fem,
-                          child: Container(
-                            width: 295 * fem,
-                            height: double.infinity,
-                            child: SwipeCards(
-                              matchEngine: _matchEngine!,
-                              itemBuilder: (BuildContext context, int index) {
-                                return SwipeCardLayout(
-                                  fem: fem,
-                                  swipeItems: _swipeItems,
-                                  ffem: ffem,
-                                  index: index,
-                                  onPress: () {
-                                    debugPrint("PRINT DJD");
-                                    Get.to(() => Profile(),
-                                        transition: Transition.downToUp,
-                                        duration: Duration(milliseconds: 300));
+                          ),
+                          Filter(
+                              fem: fem,
+                              onPress: () {
+                                showModalBottomSheet(
+                                  context: context,
+                                  isScrollControlled: true,
+                                  useRootNavigator: true,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(50 * fem),
+                                    topRight: Radius.circular(50 * fem),
+                                  )),
+                                  builder: (BuildContext context) {
+                                    return BottomSheetFilter();
                                   },
                                 );
-                              },
-                              onStackFinished: () {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(SnackBar(
-                                  content: Text("Stack Finished"),
-                                  duration: Duration(milliseconds: 500),
-                                ));
-                              },
-                              itemChanged: (SwipeItem item, int index) {
-                                print(
-                                    "item: ${item.content.name}, index: $index");
-                              },
-                              leftSwipeAllowed: true,
-                              rightSwipeAllowed: true,
-                              upSwipeAllowed: true,
-                              fillSpace: true,
-                              likeTag: Container(
-                                height: 300 * fem,
-                                width: 300 * fem,
-                                margin: const EdgeInsets.all(15.0),
-                                padding: const EdgeInsets.all(3.0),
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                  image: AssetImage('assets/ui-kit/like 2.png'),
-                                )),
-                              ),
-                              nopeTag: Container(
-                                height: 300 * fem,
-                                width: 300 * fem,
-                                margin: const EdgeInsets.all(15.0),
-                                padding: const EdgeInsets.all(3.0),
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                  image:
-                                      AssetImage('assets/ui-kit/dislike.png'),
-                                )),
-                              ),
-                              superLikeTag: Container(
-                                height: 300 * fem,
-                                width: 300 * fem,
-                                margin: const EdgeInsets.all(15.0),
-                                padding: const EdgeInsets.all(3.0),
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                  image: AssetImage('assets/ui-kit/star.png'),
-                                )),
-                              ),
+                              }),
+                        ],
+                      ),
+                    ),
+                    // Container(
+                    //   // headerFHA (309:5460)
+                    //   margin: EdgeInsets.fromLTRB(
+                    //       18 * fem, 0 * fem, 18 * fem, 24 * fem),
+                    //   width: double.infinity,
+                    //   height: 52 * fem,
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //     crossAxisAlignment: CrossAxisAlignment.center,
+                    //     children: [
+                    //       // Back(fem: fem),
+                    //       Container(),
+                    //       Column(
+                    //         mainAxisSize: MainAxisSize.max,
+                    //         mainAxisAlignment: MainAxisAlignment.center,
+                    //         children: [
+                    //           Text(
+                    //             'Discover',
+                    //             textAlign: TextAlign.center,
+                    //             style: AppTextStyle
+                    //                 .buildSafeGoogleFont2470012575black(
+                    //                     ffem, fem),
+                    //           ),
+                    //           Text(
+                    //             'Chicago, II',
+                    //             textAlign: TextAlign.center,
+                    //             style: AppTextStyle
+                    //                 .buildSafeGoogleFont1240012575grysubtitle(
+                    //                     ffem, fem),
+                    //           ),
+                    //         ],
+                    //       ),
+                    //       Filter(
+                    //           fem: fem,
+                    //           onPress: () {
+                    //             showModalBottomSheet(
+                    //               context: context,
+                    //               isScrollControlled: true,
+                    //               useRootNavigator: true,
+                    //               shape: RoundedRectangleBorder(
+                    //                   borderRadius: BorderRadius.only(
+                    //                 topLeft: Radius.circular(50 * fem),
+                    //                 topRight: Radius.circular(50 * fem),
+                    //               )),
+                    //               builder: (BuildContext context) {
+                    //                 return BottomSheetFilter();
+                    //               },
+                    //             );
+                    //           })
+                    //     ],
+                    //   ),
+                    // ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(
+                          18 * fem, 10 * fem, 18 * fem, 0 * fem),
+                      width: double.infinity,
+                      child: DropdownButtonFormField(
+                        // Initial Value
+                        value: dropdownvalue,
+                        decoration: InputDecoration(
+                            // labelText: "bkjdb",
+                            floatingLabelBehavior: FloatingLabelBehavior.always,
+                            alignLabelWithHint: true,
+                            // labelStyle: AppTextStyle.lable1Icon(),
+                            contentPadding: const EdgeInsets.symmetric(
+                                vertical: 8.0, horizontal: 10.0),
+                            focusColor: AppColor.primary,
+                            // suffixIcon: Icon(Icons.keyboard_arrow_down_rounded),
+                            // hintText: "Select",
+                            // hintStyle: Theme.of(context).textTheme.subtitle1,
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: AppColor.primary,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0)),
+                            border: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: AppColor.primary,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0))),
+                        // Down Arrow Icon
+                        icon: Icon(
+                          Icons.keyboard_arrow_down_rounded,
+                          color: AppColor.primary,
+                        ),
+                        // Array list of items
+                        items: items.map((String items) {
+                          return DropdownMenuItem(
+                            value: items,
+                            child: Text(items),
+                          );
+                        }).toList(),
+
+                        // After selecting the desired option,it will
+                        // change button value to selected value
+                        onChanged: (String? newValue) {
+                          setState(() {
+                            dropdownvalue = newValue!;
+                          });
+                        },
+                      ),
+                    ),
+
+                    Center(
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(
+                            18 * fem, 0 * fem, 18 * fem, 20 * fem),
+                        width: double.infinity,
+                        height: 477 * fem,
+                        child: Container(
+                          width: 295 * fem,
+                          height: double.infinity,
+                          child: SwipeCards(
+                            matchEngine: _matchEngine!,
+                            itemBuilder: (BuildContext context, int index) {
+                              return SwipeCardLayout(
+                                fem: fem,
+                                swipeItems: _swipeItems,
+                                ffem: ffem,
+                                index: index,
+                                onPress: () {
+                                  debugPrint("PRINT DJD");
+                                  Get.to(() => Profile(),
+                                      transition: Transition.downToUp,
+                                      duration: Duration(milliseconds: 300));
+                                },
+                              );
+                            },
+                            onStackFinished: () {
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(SnackBar(
+                                content: Text("Stack Finished"),
+                                duration: Duration(milliseconds: 500),
+                              ));
+                            },
+                            itemChanged: (SwipeItem item, int index) {
+                              print(
+                                  "item: ${item.content.name}, index: $index");
+                            },
+                            leftSwipeAllowed: true,
+                            rightSwipeAllowed: true,
+                            upSwipeAllowed: true,
+                            fillSpace: true,
+                            likeTag: Container(
+                              height: 300 * fem,
+                              width: 300 * fem,
+                              margin: const EdgeInsets.all(15.0),
+                              padding: const EdgeInsets.all(3.0),
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: AssetImage('assets/ui-kit/like 2.png'),
+                              )),
+                            ),
+                            nopeTag: Container(
+                              height: 300 * fem,
+                              width: 300 * fem,
+                              margin: const EdgeInsets.all(15.0),
+                              padding: const EdgeInsets.all(3.0),
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: AssetImage('assets/ui-kit/dislike.png'),
+                              )),
+                            ),
+                            superLikeTag: Container(
+                              height: 300 * fem,
+                              width: 300 * fem,
+                              margin: const EdgeInsets.all(15.0),
+                              padding: const EdgeInsets.all(3.0),
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                image: AssetImage('assets/ui-kit/star.png'),
+                              )),
                             ),
                           ),
                         ),
                       ),
-                      Container(
-                        // buttonsNA4 (309:5424)
-                        margin: EdgeInsets.fromLTRB(
-                            18 * fem, 0 * fem, 18 * fem, 0 * fem),
-                        width: double.infinity,
-                        height: 99 * fem,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            InkWell(
-                              onTap: () {
-                                _matchEngine!.currentItem?.nope();
-                              },
-                              child: Container(
-                                // dislikescc (309:5431)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 10 * fem, 0 * fem, 11 * fem),
-                                padding: EdgeInsets.fromLTRB(31.5 * fem,
-                                    31.5 * fem, 31.5 * fem, 31.5 * fem),
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Color(0xffffffff),
-                                  borderRadius: BorderRadius.circular(39 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x11000000),
-                                      offset: Offset(0 * fem, 20 * fem),
-                                      blurRadius: 25 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Center(
-                                  // closesmallZEY (309:5433)
-                                  child: SizedBox(
+                    ),
+                    Container(
+                      // buttonsNA4 (309:5424)
+                      margin: EdgeInsets.fromLTRB(
+                          18 * fem, 0 * fem, 18 * fem, 0 * fem),
+                      width: double.infinity,
+                      height: 99 * fem,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          InkWell(
+                            onTap: () {
+                              _matchEngine!.currentItem?.nope();
+                            },
+                            child: Container(
+                              // dislikescc (309:5431)
+                              margin: EdgeInsets.fromLTRB(
+                                  0 * fem, 10 * fem, 0 * fem, 11 * fem),
+                              padding: EdgeInsets.fromLTRB(31.5 * fem,
+                                  31.5 * fem, 31.5 * fem, 31.5 * fem),
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(39 * fem),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Color(0x11000000),
+                                    offset: Offset(0 * fem, 20 * fem),
+                                    blurRadius: 25 * fem,
+                                  ),
+                                ],
+                              ),
+                              child: Center(
+                                // closesmallZEY (309:5433)
+                                child: SizedBox(
+                                  width: 15 * fem,
+                                  height: 15 * fem,
+                                  child: Image.asset(
+                                    'assets/ui-kit/images/close-small.png',
                                     width: 15 * fem,
                                     height: 15 * fem,
-                                    child: Image.asset(
-                                      'assets/ui-kit/images/close-small.png',
-                                      width: 15 * fem,
-                                      height: 15 * fem,
-                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              width: 20 * fem,
-                            ),
-                            InkWell(
-                              onTap: () {
-                                _matchEngine!.currentItem?.like();
-                              },
-                              child: Container(
-                                // likesm2 (309:5425)
-                                padding: EdgeInsets.fromLTRB(28.25 * fem,
-                                    32.5 * fem, 28.25 * fem, 30.03 * fem),
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Color(0xffe94057),
-                                  borderRadius:
-                                      BorderRadius.circular(49.5 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x33e94057),
-                                      offset: Offset(0 * fem, 15 * fem),
-                                      blurRadius: 7.5 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Center(
-                                  // likePDa (309:5427)
-                                  child: SizedBox(
-                                    width: 42.5 * fem,
-                                    height: 36.47 * fem,
-                                    child: Image.asset(
-                                      'assets/ui-kit/images/like_connect00.png',
-                                      width: 25 * fem,
-                                      height: 23.75 * fem,
-                                    ),
+                          ),
+                          SizedBox(
+                            width: 20 * fem,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              _matchEngine!.currentItem?.like();
+                            },
+                            child: Container(
+                              // likesm2 (309:5425)
+                              padding: EdgeInsets.fromLTRB(28.25 * fem,
+                                  32.5 * fem, 28.25 * fem, 30.03 * fem),
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Color(0xffe94057),
+                                borderRadius: BorderRadius.circular(49.5 * fem),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Color(0x33e94057),
+                                    offset: Offset(0 * fem, 15 * fem),
+                                    blurRadius: 7.5 * fem,
                                   ),
-                                ),
+                                ],
                               ),
-                            ),
-                            SizedBox(
-                              width: 20 * fem,
-                            ),
-                            InkWell(
-                              onTap: () {
-                                _matchEngine!.currentItem?.superLike();
-                              },
-                              child: Container(
-                                // startg8 (309:5428)
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 10 * fem, 0 * fem, 11 * fem),
-                                padding: EdgeInsets.fromLTRB(26.5 * fem,
-                                    27.13 * fem, 26.5 * fem, 27.13 * fem),
-                                height: double.infinity,
-                                decoration: BoxDecoration(
-                                  color: Color(0xffffffff),
-                                  borderRadius: BorderRadius.circular(39 * fem),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Color(0x11000000),
-                                      offset: Offset(0 * fem, 20 * fem),
-                                      blurRadius: 25 * fem,
-                                    ),
-                                  ],
-                                ),
-                                child: Center(
-                                  // starnWc (309:5430)
-                                  child: SizedBox(
+                              child: Center(
+                                // likePDa (309:5427)
+                                child: SizedBox(
+                                  width: 42.5 * fem,
+                                  height: 36.47 * fem,
+                                  child: Image.asset(
+                                    'assets/ui-kit/images/like_connect00.png',
                                     width: 25 * fem,
                                     height: 23.75 * fem,
-                                    child: Image.asset(
-                                      'assets/ui-kit/images/star.png',
-                                      width: 25 * fem,
-                                      height: 23.75 * fem,
-                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ],
-                        ),
+                          ),
+                          SizedBox(
+                            width: 20 * fem,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              _matchEngine!.currentItem?.superLike();
+                            },
+                            child: Container(
+                              // startg8 (309:5428)
+                              margin: EdgeInsets.fromLTRB(
+                                  0 * fem, 10 * fem, 0 * fem, 11 * fem),
+                              padding: EdgeInsets.fromLTRB(26.5 * fem,
+                                  27.13 * fem, 26.5 * fem, 27.13 * fem),
+                              height: double.infinity,
+                              decoration: BoxDecoration(
+                                color: Color(0xffffffff),
+                                borderRadius: BorderRadius.circular(39 * fem),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Color(0x11000000),
+                                    offset: Offset(0 * fem, 20 * fem),
+                                    blurRadius: 25 * fem,
+                                  ),
+                                ],
+                              ),
+                              child: Center(
+                                // starnWc (309:5430)
+                                child: SizedBox(
+                                  width: 25 * fem,
+                                  height: 23.75 * fem,
+                                  child: Image.asset(
+                                    'assets/ui-kit/images/star.png',
+                                    width: 25 * fem,
+                                    height: 23.75 * fem,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),

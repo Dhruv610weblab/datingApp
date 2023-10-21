@@ -149,6 +149,152 @@ class _UserProfileState extends State<UserProfile> {
                       SizedBox(
                         height: 20 * fem,
                       ),
+
+                      Container(
+                        width: 295 * fem,
+                        height: 50 * fem,
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 89 * fem, 0 * fem),
+                          height: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                child: Text(
+                                  'Core Values'.tr,
+                                  style: Theme.of(context).textTheme.headline5,
+                                ),
+                              ),
+                              Text(
+                                'Faith, Family, Big Heart',
+                                style: Theme.of(context).textTheme.bodyText1,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20 * fem,
+                      ),
+                      Container(
+                        width: 295 * fem,
+                        height: 50 * fem,
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 89 * fem, 0 * fem),
+                          height: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                child: Text(
+                                  'Age'.tr,
+                                  style: Theme.of(context).textTheme.headline5,
+                                ),
+                              ),
+                              Text(
+                                '24 Year old',
+                                style: Theme.of(context).textTheme.bodyText1,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20 * fem,
+                      ),
+                      Container(
+                        width: 295 * fem,
+                        height: 50 * fem,
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 89 * fem, 0 * fem),
+                          height: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                child: Text(
+                                  'Interested In'.tr,
+                                  style: Theme.of(context).textTheme.headline5,
+                                ),
+                              ),
+                              Text(
+                                'Males',
+                                style: Theme.of(context).textTheme.bodyText1,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20 * fem,
+                      ),
+                      Container(
+                        width: 295 * fem,
+                        height: 50 * fem,
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 89 * fem, 0 * fem),
+                          height: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                child: Text(
+                                  'My Deep Qualities'.tr,
+                                  style: Theme.of(context).textTheme.headline5,
+                                ),
+                              ),
+                              Text(
+                                'Chicago, IL United States',
+                                style: Theme.of(context).textTheme.bodyText1,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20 * fem,
+                      ),
+                      Container(
+                        width: 295 * fem,
+                        height: 50 * fem,
+                        child: Container(
+                          margin: EdgeInsets.fromLTRB(
+                              0 * fem, 0 * fem, 89 * fem, 0 * fem),
+                          height: double.infinity,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.fromLTRB(
+                                    0 * fem, 0 * fem, 0 * fem, 5 * fem),
+                                child: Text(
+                                  'Ethnicity'.tr,
+                                  style: Theme.of(context).textTheme.headline5,
+                                ),
+                              ),
+                              Text(
+                                'Indian',
+                                style: Theme.of(context).textTheme.bodyText1,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 20 * fem,
+                      ),
                       Container(
                         width: 295 * fem,
                         height: 50 * fem,

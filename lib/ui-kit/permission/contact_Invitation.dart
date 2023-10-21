@@ -88,7 +88,7 @@ class _ContactInvitationState extends State<ContactInvitation> {
                       ),
                     ),
                     Container(
-                      height: 500 * fem,
+                      height: 450 * fem,
                       child: Scrollable(
                         physics: NeverScrollableScrollPhysics(),
                         viewportBuilder: (_, __) {
