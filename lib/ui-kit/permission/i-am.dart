@@ -85,11 +85,11 @@ class _GenderSelectState extends State<GenderSelect> {
                       constraints: BoxConstraints(
                         maxWidth: 267 * fem,
                       ),
-                      child: Text(
-                        'Select a few of your interests and let everyone know what you’re passionate about.'
-                            .tr,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      // child: Text(
+                      //   'Select a few of your interests and let everyone know what you’re passionate about.'
+                      //       .tr,
+                      //   style: Theme.of(context).textTheme.bodyText1,
+                      // ),
                     ),
                   ],
                 ),
@@ -114,7 +114,7 @@ class _GenderSelectState extends State<GenderSelect> {
                   }),
               Container(
                 margin:
-                    EdgeInsets.fromLTRB(0 * fem, 0 * fem, 28 * fem, 32 * fem),
+                    EdgeInsets.fromLTRB(0 * fem, 28 * fem, 28 * fem, 32 * fem),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -126,11 +126,11 @@ class _GenderSelectState extends State<GenderSelect> {
                       constraints: BoxConstraints(
                         maxWidth: 267 * fem,
                       ),
-                      child: Text(
-                        'Select a few of your interests and let everyone know what you’re passionate about.'
-                            .tr,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      // child: Text(
+                      //   'Select a few of your interests and let everyone know what you’re passionate about.'
+                      //       .tr,
+                      //   style: Theme.of(context).textTheme.bodyText1,
+                      // ),
                     ),
                   ],
                 ),

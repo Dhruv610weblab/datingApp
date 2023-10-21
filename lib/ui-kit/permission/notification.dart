@@ -1,5 +1,6 @@
 import 'package:datingapp/ui-kit/home/bottom_navigation.dart';
 import 'package:datingapp/ui-kit/home/bottom_screen/dashboard.dart';
+import 'package:datingapp/ui-kit/permission/contact_Invitation.dart';
 import 'package:datingapp/widgets/common_button.dart';
 import 'package:datingapp/widgets/skip_button.dart';
 import 'package:flutter/material.dart';
@@ -93,7 +94,7 @@ class Notifications extends StatelessWidget {
                   child: CommonButton(
                       fem: fem,
                       onPress: () {
-                        Get.to(() => Home());
+                        Get.to(() => ContactInvitation());
                         debugPrint('I want to be notified');
                       },
                       text: 'I want to be notified'.tr,

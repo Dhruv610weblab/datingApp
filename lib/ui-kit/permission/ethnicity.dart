@@ -27,7 +27,6 @@ class _EthnicityScreenState extends State<EthnicityScreen> {
     {'name': 'Black'},
     {'name': 'White'},
     {'name': 'Asian'},
-    {'name': 'American'},
     {'name': 'Hispanic'},
     {'name': 'Arabic'},
     {'name': 'Native'}
@@ -93,11 +92,12 @@ class _EthnicityScreenState extends State<EthnicityScreen> {
                       constraints: BoxConstraints(
                         maxWidth: 267 * fem,
                       ),
-                      child: Text(
-                        '''Lorel empsum text is no longer to see the ehncity'''
-                            .tr,
-                        style: Theme.of(context).textTheme.bodyText1,
-                      ),
+                      // child:
+                      // Text(
+                      //   '''Lorel empsum text is no longer to see the ehncity'''
+                      //       .tr,
+                      //   style: Theme.of(context).textTheme.bodyText1,
+                      // ),
                     ),
                   ],
                 ),

@@ -371,9 +371,9 @@ class _DashboardState extends State<Dashboard> {
                                     width: 42.5 * fem,
                                     height: 36.47 * fem,
                                     child: Image.asset(
-                                      'assets/ui-kit/images/like-Dpc.png',
-                                      width: 42.5 * fem,
-                                      height: 36.47 * fem,
+                                      'assets/ui-kit/images/like_connect00.png',
+                                      width: 25 * fem,
+                                      height: 23.75 * fem,
                                     ),
                                   ),
                                 ),

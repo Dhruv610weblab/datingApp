@@ -108,7 +108,7 @@ class _MatchesState extends State<Matches> {
                       maxWidth: double.infinity,
                     ),
                     child: Text(
-                      'This is a list of people who have liked you and your matches.'
+                      'This is a list of people  who share a potential connection and a core connection'
                           .tr,
                       style: Theme.of(context).textTheme.headline4,
                     ),
@@ -277,9 +277,9 @@ class _BottomSheetNotificationState extends State<BottomSheetNotification> {
                         Container(
                           margin: EdgeInsets.fromLTRB(
                               0 * fem, 0 * fem, 0 * fem, 30 * fem),
-                          child: Text(
-                              '''It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.''',
-                              style: Theme.of(context).textTheme.subtitle1),
+                          // child: Text(
+                          //     '''It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.''',
+                          //     style: Theme.of(context).textTheme.subtitle1),
                         ),
                         Container(
                             // height: 58 * fem,
@@ -347,8 +347,34 @@ class _BottomSheetNotificationState extends State<BottomSheetNotification> {
                                     onChanged: (change) {}),
                               ],
                             )),
+                        SizedBox(
+                          height: 10 * fem,
+                        ),
+                        Container(
+                            // height: 58 * fem,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Color(0xffe8e6ea)),
+                              color: Color(0xffffffff),
+                              borderRadius: BorderRadius.circular(15 * fem),
+                            ),
+                            child: Column(
+                              children: [
+                                RadioListTile(
+                                    value: "value",
+                                    title: Text('Core values'.tr,
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600)),
+                                    groupValue: "groupValue",
+                                    onChanged: (change) {}),
+                              ],
+                            )),
                       ],
                     ),
+                  ),
+                  SizedBox(
+                    height: 10 * fem,
                   ),
                   Container(
                     margin: EdgeInsets.fromLTRB(

@@ -16,71 +16,70 @@ class Passions extends StatefulWidget {
 class _PassionsState extends State<Passions> {
   List<Map<String, dynamic>> interestList = <Map<String, dynamic>>[
     {
-      "name": "Photography",
+      "name": "Empathy",
       "image": 'assets/ui-kit/images/camera-nL8.png',
       "active": false
     },
     {
-      "name": "Shopping",
+      "name": "Integrity",
       "image": 'assets/ui-kit/images/weixin-market.png',
       "active": false
     },
     {
-      "name": "Karaoke",
+      "name": "Resilience",
       "image": 'assets/ui-kit/images/voice.png',
       "active": false
     },
     {
-      "name": "Yoga",
+      "name": "Humility",
       "image": 'assets/ui-kit/images/viencharts.png',
       "active": false
     },
     {
-      "name": "Cooking",
+      "name": "Courage",
       "image": 'assets/ui-kit/images/noodles.png',
       "active": false
     },
     {
-      "name": "Tennis",
+      "name": "Authenticity",
       "image": 'assets/ui-kit/images/tennis.png',
       "active": false
     },
-    {"name": "Run", "image": 'assets/ui-kit/images/sport.png', "active": false},
     {
-      "name": "Swimming",
+      "name": "Gratitude",
+      "image": 'assets/ui-kit/images/sport.png',
+      "active": false
+    },
+    {
+      "name": "Generosity",
       "image": 'assets/ui-kit/images/ripple.png',
       "active": false
     },
     {
-      "name": "Art",
+      "name": "Patience",
       "image": 'assets/ui-kit/images/platte.png',
       "active": false
     },
     {
-      "name": "Travelling",
+      "name": "Respect",
       "image": 'assets/ui-kit/images/outdoor.png',
       "active": false
     },
     {
-      "name": "Extreme",
+      "name": "Adaptability",
       "image": 'assets/ui-kit/images/parachute.png',
       "active": false
     },
     {
-      "name": "Music",
+      "name": "Self-discipline",
       "image": 'assets/ui-kit/images/music.png',
       "active": false
     },
     {
-      "name": "Drink",
-      "image": 'assets/ui-kit/images/goblet-full.png',
+      "name": "Other",
+      "image": 'assets/ui-kit/images/music.png',
       "active": false
-    },
-    {
-      "name": "Video game",
-      "image": 'assets/ui-kit/images/game-handle.png',
-      "active": false
-    },
+    }
   ];
 
   @override
@@ -126,18 +125,18 @@ class _PassionsState extends State<Passions> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Your Passions'.tr,
+                    'My Deep Qualities'.tr,
                     style: Theme.of(context).textTheme.headline2,
                   ),
                   Container(
                     constraints: BoxConstraints(
                       maxWidth: 267 * fem,
                     ),
-                    child: Text(
-                      'Select a few of your interests and let everyone know what you’re passionate about.'
-                          .tr,
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
+                    // child: Text(
+                    //   'Select a few of your interests and let everyone know what you’re passionate about.'
+                    //       .tr,
+                    //   style: Theme.of(context).textTheme.bodyText1,
+                    // ),
                   ),
                 ],
               ),
@@ -172,22 +171,23 @@ class _PassionsState extends State<Passions> {
                               ? PassionStyle.buildBoxDecorationActive(fem)
                               : PassionStyle.buildBoxDecorationDisable(fem),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Container(
-                                margin: EdgeInsets.fromLTRB(
-                                    0 * fem, 0 * fem, 8.79 * fem, 0 * fem),
-                                width: 17.42 * fem,
-                                height: 15.83 * fem,
-                                child: Image.asset(
-                                  interestList[index]["image"].toString(),
-                                  width: 17.42 * fem,
-                                  height: 15.83 * fem,
-                                  color: interestList[index]["active"] == true
-                                      ? AppColor.white
-                                      : AppColor.primary,
-                                ),
-                              ),
+                              // Container(
+                              //   margin: EdgeInsets.fromLTRB(
+                              //       0 * fem, 0 * fem, 8.79 * fem, 0 * fem),
+                              //   width: 17.42 * fem,
+                              //   height: 15.83 * fem,
+                              //   child: Image.asset(
+                              //     interestList[index]["image"].toString(),
+                              //     width: 17.42 * fem,
+                              //     height: 15.83 * fem,
+                              //     color: interestList[index]["active"] == true
+                              //         ? AppColor.white
+                              //         : AppColor.primary,
+                              //   ),
+                              // ),
                               Text(
                                 interestList[index]["name"].toString(),
                                 style: interestList[index]["active"] == true
